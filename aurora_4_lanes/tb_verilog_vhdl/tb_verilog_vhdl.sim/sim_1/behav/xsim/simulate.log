@@ -1,0 +1,4 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Error: Signal mismatch in <s_axi_keep_*> @ 5000 ps
+Time: 5 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_4_lanes/tb_gen_check.vhd

@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_4_lanes/aurora_64b66b_0_frame_check.vhd,1651748617,vhdl,,,,aurora_64b66b_0_frame_check,,,,,,,,
+/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_4_lanes/aurora_64b66b_0_frame_gen.vhd,1652087695,vhdl,,,,aurora_64b66b_0_frame_gen,,,,,,,,
+/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_4_lanes/aurora_64b66b_1_frame_check.v,1651748609,verilog,,/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_4_lanes/aurora_64b66b_1_frame_gen.v,,aurora_64b66b_1_FRAME_CHECK,,,,,,,,
+/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_4_lanes/aurora_64b66b_1_frame_gen.v,1651499160,verilog,,,,aurora_64b66b_1_FRAME_GEN,,,,,,,,
+/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_4_lanes/tb_gen_check.vhd,1652087827,vhdl,,,,tb_gen_check,,,,,,,,
+/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_4_lanes/tb_verilog_vhdl/tb_verilog_vhdl.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

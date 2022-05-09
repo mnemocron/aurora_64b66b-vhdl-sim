@@ -1,0 +1,32 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /sw/xilinx/Vivado/2020.2/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 6186b38c0c6443c7a58ec5f1da1bbd23 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_gen_check_behav xil_defaultlib.tb_gen_check xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3705] select index 8 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:209]
+WARNING: [VRFC 10-3705] select index 9 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:210]
+WARNING: [VRFC 10-3705] select index 10 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:211]
+WARNING: [VRFC 10-3705] select index 11 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:212]
+WARNING: [VRFC 10-3705] select index 12 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:213]
+WARNING: [VRFC 10-3705] select index 13 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:214]
+WARNING: [VRFC 10-3705] select index 14 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:215]
+WARNING: [VRFC 10-3705] select index 15 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:216]
+WARNING: [VRFC 10-3705] select index 16 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:217]
+WARNING: [VRFC 10-3705] select index 17 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:218]
+WARNING: [VRFC 10-3705] select index 18 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:219]
+WARNING: [VRFC 10-3705] select index 19 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:220]
+WARNING: [VRFC 10-3705] select index 20 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:221]
+WARNING: [VRFC 10-3705] select index 21 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:222]
+WARNING: [VRFC 10-3705] select index 22 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:223]
+WARNING: [VRFC 10-3705] select index 23 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:224]
+WARNING: [VRFC 10-3705] select index 24 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:225]
+WARNING: [VRFC 10-3705] select index 25 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:226]
+WARNING: [VRFC 10-3705] select index 26 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:227]
+WARNING: [VRFC 10-3705] select index 27 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:228]
+WARNING: [VRFC 10-3705] select index 28 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:229]
+WARNING: [VRFC 10-3705] select index 29 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:230]
+WARNING: [VRFC 10-3705] select index 30 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:231]
+WARNING: [VRFC 10-3705] select index 31 into 'RX_REM_R2' is out of bounds [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:232]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

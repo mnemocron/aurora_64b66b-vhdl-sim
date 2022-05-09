@@ -1,0 +1,388 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Error: Signal mismatch in <s_axi_keep_*> @ 5000 ps
+Time: 5 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2525000 ps
+Time: 2525 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2525000 ps
+Time: 2525 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2530000 ps
+Time: 2530 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2530000 ps
+Time: 2530 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2535000 ps
+Time: 2535 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2535000 ps
+Time: 2535 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2540000 ps
+Time: 2540 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2540000 ps
+Time: 2540 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2545000 ps
+Time: 2545 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2545000 ps
+Time: 2545 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2550000 ps
+Time: 2550 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2550000 ps
+Time: 2550 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2555000 ps
+Time: 2555 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2555000 ps
+Time: 2555 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2560000 ps
+Time: 2560 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2560000 ps
+Time: 2560 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2565000 ps
+Time: 2565 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2565000 ps
+Time: 2565 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2570000 ps
+Time: 2570 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2570000 ps
+Time: 2570 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2575000 ps
+Time: 2575 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2575000 ps
+Time: 2575 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2580000 ps
+Time: 2580 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2580000 ps
+Time: 2580 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2585000 ps
+Time: 2585 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2585000 ps
+Time: 2585 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2590000 ps
+Time: 2590 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2590000 ps
+Time: 2590 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2595000 ps
+Time: 2595 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2595000 ps
+Time: 2595 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2600000 ps
+Time: 2600 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2600000 ps
+Time: 2600 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2605000 ps
+Time: 2605 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2605000 ps
+Time: 2605 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2610000 ps
+Time: 2610 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2610000 ps
+Time: 2610 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2615000 ps
+Time: 2615 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2615000 ps
+Time: 2615 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2620000 ps
+Time: 2620 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2620000 ps
+Time: 2620 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2625000 ps
+Time: 2625 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2625000 ps
+Time: 2625 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2630000 ps
+Time: 2630 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2630000 ps
+Time: 2630 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2635000 ps
+Time: 2635 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2635000 ps
+Time: 2635 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2640000 ps
+Time: 2640 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2640000 ps
+Time: 2640 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2645000 ps
+Time: 2645 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2645000 ps
+Time: 2645 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2650000 ps
+Time: 2650 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2650000 ps
+Time: 2650 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2655000 ps
+Time: 2655 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2655000 ps
+Time: 2655 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2660000 ps
+Time: 2660 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2660000 ps
+Time: 2660 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2665000 ps
+Time: 2665 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2665000 ps
+Time: 2665 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2670000 ps
+Time: 2670 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2670000 ps
+Time: 2670 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2675000 ps
+Time: 2675 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2675000 ps
+Time: 2675 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2680000 ps
+Time: 2680 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2680000 ps
+Time: 2680 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2685000 ps
+Time: 2685 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2685000 ps
+Time: 2685 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2690000 ps
+Time: 2690 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2690000 ps
+Time: 2690 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2695000 ps
+Time: 2695 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2695000 ps
+Time: 2695 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2700000 ps
+Time: 2700 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2700000 ps
+Time: 2700 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2705000 ps
+Time: 2705 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2705000 ps
+Time: 2705 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2710000 ps
+Time: 2710 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2710000 ps
+Time: 2710 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2715000 ps
+Time: 2715 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2715000 ps
+Time: 2715 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2720000 ps
+Time: 2720 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2720000 ps
+Time: 2720 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2725000 ps
+Time: 2725 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2725000 ps
+Time: 2725 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2730000 ps
+Time: 2730 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2730000 ps
+Time: 2730 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2735000 ps
+Time: 2735 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2735000 ps
+Time: 2735 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2740000 ps
+Time: 2740 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2740000 ps
+Time: 2740 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2745000 ps
+Time: 2745 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2745000 ps
+Time: 2745 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2750000 ps
+Time: 2750 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2750000 ps
+Time: 2750 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2755000 ps
+Time: 2755 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2755000 ps
+Time: 2755 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2760000 ps
+Time: 2760 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2760000 ps
+Time: 2760 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2765000 ps
+Time: 2765 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2765000 ps
+Time: 2765 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2770000 ps
+Time: 2770 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2770000 ps
+Time: 2770 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2775000 ps
+Time: 2775 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2775000 ps
+Time: 2775 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2780000 ps
+Time: 2780 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2780000 ps
+Time: 2780 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2785000 ps
+Time: 2785 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2785000 ps
+Time: 2785 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2790000 ps
+Time: 2790 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2790000 ps
+Time: 2790 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2795000 ps
+Time: 2795 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2795000 ps
+Time: 2795 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2800000 ps
+Time: 2800 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2800000 ps
+Time: 2800 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2805000 ps
+Time: 2805 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2805000 ps
+Time: 2805 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2810000 ps
+Time: 2810 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2810000 ps
+Time: 2810 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2815000 ps
+Time: 2815 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2815000 ps
+Time: 2815 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2820000 ps
+Time: 2820 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2820000 ps
+Time: 2820 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2825000 ps
+Time: 2825 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2825000 ps
+Time: 2825 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2830000 ps
+Time: 2830 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2830000 ps
+Time: 2830 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2835000 ps
+Time: 2835 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2835000 ps
+Time: 2835 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2840000 ps
+Time: 2840 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2840000 ps
+Time: 2840 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2845000 ps
+Time: 2845 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2845000 ps
+Time: 2845 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2850000 ps
+Time: 2850 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2850000 ps
+Time: 2850 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2855000 ps
+Time: 2855 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2855000 ps
+Time: 2855 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2860000 ps
+Time: 2860 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2860000 ps
+Time: 2860 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2865000 ps
+Time: 2865 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2865000 ps
+Time: 2865 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2870000 ps
+Time: 2870 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2870000 ps
+Time: 2870 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2875000 ps
+Time: 2875 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2875000 ps
+Time: 2875 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2880000 ps
+Time: 2880 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2880000 ps
+Time: 2880 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2885000 ps
+Time: 2885 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2885000 ps
+Time: 2885 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2890000 ps
+Time: 2890 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2890000 ps
+Time: 2890 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2895000 ps
+Time: 2895 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2895000 ps
+Time: 2895 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2900000 ps
+Time: 2900 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2900000 ps
+Time: 2900 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2905000 ps
+Time: 2905 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2905000 ps
+Time: 2905 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2910000 ps
+Time: 2910 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2910000 ps
+Time: 2910 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2915000 ps
+Time: 2915 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2915000 ps
+Time: 2915 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2920000 ps
+Time: 2920 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2920000 ps
+Time: 2920 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2925000 ps
+Time: 2925 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2925000 ps
+Time: 2925 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2930000 ps
+Time: 2930 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2930000 ps
+Time: 2930 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2935000 ps
+Time: 2935 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2935000 ps
+Time: 2935 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2940000 ps
+Time: 2940 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2940000 ps
+Time: 2940 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2945000 ps
+Time: 2945 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2945000 ps
+Time: 2945 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2950000 ps
+Time: 2950 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2950000 ps
+Time: 2950 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2955000 ps
+Time: 2955 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2955000 ps
+Time: 2955 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2960000 ps
+Time: 2960 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2960000 ps
+Time: 2960 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2965000 ps
+Time: 2965 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2965000 ps
+Time: 2965 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2970000 ps
+Time: 2970 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2970000 ps
+Time: 2970 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2975000 ps
+Time: 2975 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2975000 ps
+Time: 2975 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2980000 ps
+Time: 2980 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2980000 ps
+Time: 2980 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2985000 ps
+Time: 2985 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2985000 ps
+Time: 2985 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2990000 ps
+Time: 2990 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2990000 ps
+Time: 2990 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 2995000 ps
+Time: 2995 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 2995000 ps
+Time: 2995 ns  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_error_*> @ 3000000 ps
+Time: 3 us  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd
+Error: Signal mismatch in <s_OK_*> @ 3000000 ps
+Time: 3 us  Iteration: 1  Process: /tb_gen_check/assert_process  File: /home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/tb_gen_check.vhd

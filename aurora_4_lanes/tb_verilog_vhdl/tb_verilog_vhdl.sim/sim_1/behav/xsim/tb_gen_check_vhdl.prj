@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../aurora_64b66b_0_frame_check.vhd" \
+"../../../../../aurora_64b66b_0_frame_gen.vhd" \
+"../../../../../tb_gen_check.vhd" \
+
+# Do not sort compile order
+nosort

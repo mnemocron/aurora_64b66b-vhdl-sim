@@ -1,0 +1,24 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /sw/xilinx/Vivado/2020.2/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 6186b38c0c6443c7a58ec5f1da1bbd23 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_gen_check_behav xil_defaultlib.tb_gen_check xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture bh of entity xil_defaultlib.aurora_64b66b_0_FRAME_GEN [aurora_64b66b_0_frame_gen_defaul...]
+Compiling module xil_defaultlib.aurora_64b66b_1_FRAME_GEN(DATA_W...
+Compiling architecture bh of entity xil_defaultlib.aurora_64b66b_0_FRAME_CHECK [aurora_64b66b_0_frame_check_defa...]
+Compiling module xil_defaultlib.aurora_64b66b_1_FRAME_CHECK(DATA...
+Compiling architecture behavioral of entity xil_defaultlib.tb_gen_check
+Built simulation snapshot tb_gen_check_behav
