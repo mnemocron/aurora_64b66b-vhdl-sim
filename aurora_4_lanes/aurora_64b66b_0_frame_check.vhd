@@ -88,8 +88,6 @@ ENTITY aurora_64b66b_0_FRAME_CHECK IS
     DATA_ERR_COUNT : out STD_LOGIC_VECTOR(7 downto 0);
     DATA_OK_COUNT  : out STD_LOGIC_VECTOR(7 downto 0);
     -- User Interface
-    RX_D_R_debug  : out  STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
-    pdu_cmp_data_r1_debug  : out  STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
     AXI4_S_IP_TX_TDATA  : in  STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
     AXI4_S_IP_TX_TVALID : in  STD_LOGIC;
     AXI4_S_IP_TX_TLAST  : in  STD_LOGIC;
@@ -115,6 +113,13 @@ ARCHITECTURE bh OF aurora_64b66b_0_FRAME_CHECK IS
   signal RX_REM_R3          : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
   signal RX_EOF_N_R2        : STD_LOGIC;
   signal RX_SRC_RDY_N_R2    : STD_LOGIC;
+  
+  attribute shreg_extract : string;
+  attribute shreg_extract of RX_D_R2         : signal is "{no}";
+  attribute shreg_extract of RX_REM_R2       : signal is "{no}";
+  attribute shreg_extract of RX_REM_R3       : signal is "{no}";
+  attribute shreg_extract of RX_EOF_N_R2     : signal is "{no}";
+  attribute shreg_extract of RX_SRC_RDY_N_R2 : signal is "{no}";
  
   signal pdu_in_frame_c    : STD_LOGIC;
   signal pdu_lfsr_concat_w : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
@@ -144,7 +149,6 @@ BEGIN
       IF (reset_i = '1') THEN
         pdu_lfsr_r <= x"D5E6";  -- random seed value
       ELSIF (pdu_data_valid_c = '1') THEN
-        --pdu_lfsr_r <= (NOT (pdu_lfsr_r(3) XOR pdu_lfsr_r(12) XOR pdu_lfsr_r(14) XOR pdu_lfsr_r(15)) & pdu_lfsr_r(14 downto 0));
         pdu_lfsr_r <= (NOT (pdu_lfsr_r(12) XOR pdu_lfsr_r(3) XOR pdu_lfsr_r(1) XOR pdu_lfsr_r(0)) & pdu_lfsr_r(15 downto 1));
       END IF;
     END IF;
@@ -167,7 +171,6 @@ BEGIN
   BEGIN 
     IF rising_edge(USER_CLK) THEN
       RX_D_R2         <= AXI4_S_IP_TX_TDATA_i;
-      -- RX_D_R2         <= AXI4_S_IP_TX_TDATA_i & AXI4_S_IP_TX_TDATA_i & AXI4_S_IP_TX_TDATA_i & AXI4_S_IP_TX_TDATA_i;
       RX_REM_R2       <= AXI4_S_IP_TX_TKEEP_i; 
       RX_REM_R3       <= AXI4_S_IP_TX_TKEEP_i;
       RX_EOF_N_R2     <= NOT AXI4_S_IP_TX_TLAST; 
@@ -198,7 +201,7 @@ BEGIN
     END IF;
   END PROCESS;
 
-  -- KEEP_CMP  ( 63 downto 0 )
+  -- size of KEEP_CMP  ( 63 downto 0 )
   -- RX_REM_R2 (  1 downto 0 )
   -- 1 lane
   -- KEEP_CMP(63 downto 56) <= (others => RX_REM_R2( 0) );
@@ -280,7 +283,6 @@ BEGIN
       IF (reset_i = '1') THEN
         pdu_data_valid_r <= '0';
       ELSE
-        -- pdu_data_valid_r    <=  `DLY    pdu_data_valid_c && !pdu_err_detected_c;
         pdu_data_valid_r <= (pdu_data_valid_c) AND (NOT and_reduce(pdu_err_detected_c));
       END IF;
     END IF;
@@ -292,9 +294,6 @@ BEGIN
   data_err_c(1) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(127 downto  64)) /= unsigned(pdu_cmp_data_r1(127 downto  64))) ) ELSE '0';
   data_err_c(2) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(191 downto 128)) /= unsigned(pdu_cmp_data_r1(191 downto 128))) ) ELSE '0';
   data_err_c(3) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(255 downto 192)) /= unsigned(pdu_cmp_data_r1(255 downto 192))) ) ELSE '0';
-
-RX_D_R_debug <= RX_D_R;
-pdu_cmp_data_r1_debug <= pdu_cmp_data_r1;
 
   -- An error is detected when LFSR generated PDU data from the pdu_cmp_data_r register, 
   -- does not match valid data from the RX_D port

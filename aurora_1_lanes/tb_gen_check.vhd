@@ -131,23 +131,10 @@ signal s_error_Veri : STD_LOGIC_VECTOR(7 downto 0);
 signal s_OK_VHDL : STD_LOGIC_VECTOR(7 downto 0);
 signal s_OK_Veri : STD_LOGIC_VECTOR(7 downto 0);
 
+
 constant clock_period : time := 5 ns;
 
 begin
-
--- self checking testbench
-assert_process : process(user_clk)
-begin
-    -- use falling edge, because the Verilog files use delayed 'DLY assertions so the signals are later than rising_edge
-    if falling_edge(user_clk) then
-        assert s_axi_data_VHDL = s_axi_data_Veri report "Signal mismatch in <s_axi_data_*> @ " & time'image(now) severity error;
-        assert s_axi_keep_VHDL = s_axi_keep_Veri report "Signal mismatch in <s_axi_keep_*> @ " & time'image(now) severity error;
-        assert s_axi_last_VHDL = s_axi_last_Veri report "Signal mismatch in <s_axi_last_*> @ " & time'image(now) severity error;
-        assert s_axi_valid_VHDL = s_axi_valid_Veri report "Signal mismatch in <s_axi_valid_*> @ " & time'image(now) severity error;
-        assert s_error_VHDL = s_error_Veri report "Signal mismatch in <s_error_*> @ " & time'image(now) severity error;
-        assert s_OK_VHDL = s_OK_Veri report "Signal mismatch in <s_OK_*> @ " & time'image(now) severity error;
-    end if;
-end process;
 
 clock_process :process
 begin
@@ -241,6 +228,27 @@ end process;
     AXI4_S_IP_TX_TKEEP  => s_axi_keep_Veri,
     AXI4_S_IP_TX_TREADY => s_axi_txready_Veri
   );
+  
+  -- self checking testbench
+assert_process : process(user_clk)
+--    alias RX_D_R2_vhdl is << signal tb_gen_check.vhdl_check.RX_D_R2    : STD_LOGIC_VECTOR(64-1 downto 0) >>;
+--    alias RX_D_R2_veri is << signal tb_gen_check.verilog_check.RX_D_R2 : STD_LOGIC_VECTOR(64-1 downto 0) >>;
+begin
+    -- use falling edge, because the Verilog files use delayed 'DLY assertions so the signals are later than rising_edge
+    if falling_edge(user_clk) then
+        assert s_axi_data_VHDL = s_axi_data_Veri report "Signal mismatch in <s_axi_data_*> @ " & time'image(now) severity error;
+        assert s_axi_keep_VHDL = s_axi_keep_Veri report "Signal mismatch in <s_axi_keep_*> @ " & time'image(now) severity error;
+        assert s_axi_last_VHDL = s_axi_last_Veri report "Signal mismatch in <s_axi_last_*> @ " & time'image(now) severity error;
+        assert s_axi_valid_VHDL = s_axi_valid_Veri report "Signal mismatch in <s_axi_valid_*> @ " & time'image(now) severity error;
+        assert s_error_VHDL = s_error_Veri report "Signal mismatch in <s_error_*> @ " & time'image(now) severity error;
+        assert s_OK_VHDL = s_OK_Veri report "Signal mismatch in <s_OK_*> @ " & time'image(now) severity error;
+        
+--        assert RX_D_R2_vhdl = RX_D_R2_veri report "Signal mismatch in <RX_D_R2> @ " & time'image(now) severity error;
+        
+        
+        
+    end if;
+end process;
 
 
 end Behavioral; 

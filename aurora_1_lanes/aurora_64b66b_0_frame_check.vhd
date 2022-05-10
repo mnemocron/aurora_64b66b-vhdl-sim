@@ -114,6 +114,13 @@ ARCHITECTURE bh OF aurora_64b66b_0_FRAME_CHECK IS
   signal RX_EOF_N_R2        : STD_LOGIC;
   signal RX_SRC_RDY_N_R2    : STD_LOGIC;
  
+  attribute shreg_extract : string;
+  attribute shreg_extract of RX_D_R2         : signal is "{no}";
+  attribute shreg_extract of RX_REM_R2       : signal is "{no}";
+  attribute shreg_extract of RX_REM_R3       : signal is "{no}";
+  attribute shreg_extract of RX_EOF_N_R2     : signal is "{no}";
+  attribute shreg_extract of RX_SRC_RDY_N_R2 : signal is "{no}";
+
   signal pdu_in_frame_c    : STD_LOGIC;
   signal pdu_lfsr_concat_w : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
   signal pdu_data_valid_c  : STD_LOGIC;
@@ -142,7 +149,6 @@ BEGIN
       IF (reset_i = '1') THEN
         pdu_lfsr_r <= x"D5E6";  -- random seed value
       ELSIF (pdu_data_valid_c = '1') THEN
-        --pdu_lfsr_r <= (NOT (pdu_lfsr_r(3) XOR pdu_lfsr_r(12) XOR pdu_lfsr_r(14) XOR pdu_lfsr_r(15)) & pdu_lfsr_r(14 downto 0));
         pdu_lfsr_r <= (NOT (pdu_lfsr_r(12) XOR pdu_lfsr_r(3) XOR pdu_lfsr_r(1) XOR pdu_lfsr_r(0)) & pdu_lfsr_r(15 downto 1));
       END IF;
     END IF;
@@ -165,7 +171,6 @@ BEGIN
   BEGIN 
     IF rising_edge(USER_CLK) THEN
       RX_D_R2         <= AXI4_S_IP_TX_TDATA_i;
-      -- RX_D_R2         <= AXI4_S_IP_TX_TDATA_i & AXI4_S_IP_TX_TDATA_i & AXI4_S_IP_TX_TDATA_i & AXI4_S_IP_TX_TDATA_i;
       RX_REM_R2       <= AXI4_S_IP_TX_TKEEP_i; 
       RX_REM_R3       <= AXI4_S_IP_TX_TKEEP_i;
       RX_EOF_N_R2     <= NOT AXI4_S_IP_TX_TLAST; 
@@ -277,8 +282,8 @@ BEGIN
     IF rising_edge(USER_CLK) THEN
       IF (reset_i = '1') THEN
         pdu_data_valid_r <= '0';
-      ELSIF (pdu_data_valid_c = '1') THEN
-        pdu_data_valid_r <= (pdu_data_valid_c) AND (NOT pdu_err_detected_c(0));
+      ELSE
+        pdu_data_valid_r <= (pdu_data_valid_c) AND (NOT or_reduce(pdu_err_detected_c));
       END IF;
     END IF;
   END PROCESS;
@@ -286,6 +291,7 @@ BEGIN
   pdu_cmp_data_r1 <= pdu_cmp_data_r;
     
   data_err_c(0) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R( 63 downto   0)) /= unsigned(pdu_cmp_data_r1( 63 downto   0))) ) ELSE '0';
+  --data_err_c(0) <=  pdu_data_valid_r AND or_reduce(RX_D_R(63 downto 0) XOR pdu_cmp_data_r1(63 downto 0)) ;
   --data_err_c(1) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(127 downto  64)) /= unsigned(pdu_cmp_data_r1(127 downto  64))) ) ELSE '0';
   --data_err_c(2) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(191 downto 128)) /= unsigned(pdu_cmp_data_r1(191 downto 128))) ) ELSE '0';
   --data_err_c(3) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(255 downto 192)) /= unsigned(pdu_cmp_data_r1(255 downto 192))) ) ELSE '0';
@@ -311,8 +317,8 @@ BEGIN
       ELSIF ( CHANNEL_UP = '0' ) THEN
         s_DATA_ERR_COUNT <= (others => '0');
         s_DATA_OK_COUNT  <= (others => '0');
-      ELSIF ( and_reduce(std_logic_vector(s_DATA_ERR_COUNT)) = '1') THEN
-        s_DATA_ERR_COUNT <= s_DATA_ERR_COUNT;
+      -- ELSIF ( and_reduce(std_logic_vector(s_DATA_ERR_COUNT)) = '1') THEN
+      --   s_DATA_ERR_COUNT <= s_DATA_ERR_COUNT;
       ELSIF ( or_reduce(pdu_err_detected_c) = '1' ) THEN
         s_DATA_ERR_COUNT <= unsigned(s_DATA_ERR_COUNT) + 1;
       ELSE
