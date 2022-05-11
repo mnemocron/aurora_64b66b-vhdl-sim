@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aurora_64b66b_1_FRAME_CHECK
+INFO: [VRFC 10-2458] undeclared symbol resetUFC, assumed default net type wire [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_check.v:154]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aurora_64b66b_1_FRAME_GEN
+INFO: [VRFC 10-2458] undeclared symbol resetUFC, assumed default net type wire [/home/simbu448/Documents/vivado/aurora_64b66b-vhdl-sim/aurora_1_lanes/aurora_64b66b_1_frame_gen.v:157]

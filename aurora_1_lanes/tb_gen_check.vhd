@@ -211,7 +211,7 @@ end process;
     AXI4_S_IP_TX_TVALID => s_axi_valid_VHDL,
     AXI4_S_IP_TX_TLAST  => s_axi_last_VHDL,
     AXI4_S_IP_TX_TKEEP  => s_axi_keep_VHDL, --_w
-    AXI4_S_IP_TX_TREADY => s_axi_txready_VHDL
+    AXI4_S_IP_TX_TREADY => open
   );
   
   verilog_check : aurora_64b66b_1_FRAME_CHECK port map (
@@ -226,7 +226,7 @@ end process;
     AXI4_S_IP_TX_TVALID => s_axi_valid_Veri,
     AXI4_S_IP_TX_TLAST  => s_axi_last_Veri,
     AXI4_S_IP_TX_TKEEP  => s_axi_keep_Veri,
-    AXI4_S_IP_TX_TREADY => s_axi_txready_Veri
+    AXI4_S_IP_TX_TREADY => open
   );
   
   -- self checking testbench
