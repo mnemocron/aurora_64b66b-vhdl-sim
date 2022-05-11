@@ -67,63 +67,64 @@ USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY aurora_64b66b_0_FRAME_GEN IS
   GENERIC (
-    DATA_WIDTH      : integer := 64;   --  64   DATA bus width
-    STRB_WIDTH      : integer := 8;    --  8   STROBE bus width
-    AURORA_LANES    : integer := 1;    --  1
-    LANE_DATA_WIDTH : integer := 1*64; --  AURORA_LANES * 64
-    REM_BUS         : integer := 3;    --  3
-    REM_BITS_MAX    : integer := 8     --  LANE_DATA_WIDTH/8
+    DATA_WIDTH      : INTEGER := 1*64; --  AURORA_LANES * 64
+    STRB_WIDTH      : INTEGER := 1*8;  --  AURORA_LANES * 8
+    AURORA_LANES    : INTEGER := 1;    --  number of lanes
+    LANE_DATA_WIDTH : INTEGER := 1*64; --  AURORA_LANES * 64
+    REM_BUS         : INTEGER := 3;    --  3 for 1 lane / 5 for 4 lanes
+    REM_BITS_MAX    : INTEGER := 1*8   --  LANE_DATA_WIDTH / 8
   );
   PORT (
     -- System interface
-    USER_CLK   : in  STD_LOGIC;
-    RESET      : in  STD_LOGIC;
-    CHANNEL_UP : in  STD_LOGIC;
+    USER_CLK   : IN  STD_LOGIC;
+    RESET      : IN  STD_LOGIC;
+    CHANNEL_UP : IN  STD_LOGIC;
     -- PDU interface
-    AXI4_S_IP_TREADY : in  STD_LOGIC;
-    AXI4_S_OP_TDATA  : out STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
-    AXI4_S_OP_TVALID : out STD_LOGIC;
-    AXI4_S_OP_TKEEP  : out STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
-    AXI4_S_OP_TLAST  : out STD_LOGIC 
+    AXI4_S_IP_TREADY : IN  STD_LOGIC;
+    AXI4_S_OP_TDATA  : OUT STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
+    AXI4_S_OP_TVALID : OUT STD_LOGIC;
+    AXI4_S_OP_TKEEP  : OUT STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
+    AXI4_S_OP_TLAST  : OUT STD_LOGIC 
   );
 END aurora_64b66b_0_FRAME_GEN;
 
 ARCHITECTURE bh OF aurora_64b66b_0_FRAME_GEN IS
--- External Register Declarations
-  signal s_AXI4_S_OP_TDATA : STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0); 
-  --signal s_AXI4_S_OP_TVALID : STD_LOGIC; 
-  --signal s_AXI4_S_OP_TLAST : STD_LOGIC; 
-  --signal s_AXI4_S_OP_TKEEP : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
--- Wire declarations
-  signal ifg_done_c : STD_LOGIC; 
-  signal ifg_done_c_next : STD_LOGIC; 
-  -- Next state signals for one-hot state machine
-  signal next_idle_c : STD_LOGIC; 
-  signal next_single_cycle_frame_c : STD_LOGIC; 
-  signal next_sof_c : STD_LOGIC; 
-  signal next_data_cycle_c : STD_LOGIC; 
-  signal next_eof_c : STD_LOGIC; 
 
-  signal ufc_tx_src_rdy_int : STD_LOGIC;
+  -- External Register Declarations
+  SIGNAL s_AXI4_S_OP_TDATA : STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0); 
+  --SIGNAL s_AXI4_S_OP_TVALID : STD_LOGIC; 
+  --SIGNAL s_AXI4_S_OP_TLAST : STD_LOGIC; 
+  --SIGNAL s_AXI4_S_OP_TKEEP : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
+  -- Wire declarations
+  SIGNAL ifg_done_c : STD_LOGIC; 
+  SIGNAL ifg_done_c_next : STD_LOGIC; 
+  -- Next state SIGNALs for one-hot state machine
+  SIGNAL next_idle_c : STD_LOGIC; 
+  SIGNAL next_single_cycle_frame_c : STD_LOGIC; 
+  SIGNAL next_sof_c  : STD_LOGIC; 
+  SIGNAL next_data_cycle_c : STD_LOGIC; 
+  SIGNAL next_eof_c  : STD_LOGIC; 
 
-  signal reset_i : STD_LOGIC;
-  signal RESET_ii : STD_LOGIC;
+  SIGNAL ufc_tx_src_rdy_int : STD_LOGIC;
 
--- Internal Register Declarations
-  signal pdu_lfsr_r  : STD_LOGIC_VECTOR(15 downto 0); 
-  signal ifg_size_r  : UNSIGNED(7 downto 0); 
-  signal first_tx_dst_rdy_n : STD_LOGIC;
-  signal frame_size_r : UNSIGNED(3 downto 0); 
-  signal bytes_sent_r : UNSIGNED(3 downto 0); 
-  signal rem_r  : UNSIGNED(STRB_WIDTH-1 downto 0);
-  signal rem_r2 : UNSIGNED(STRB_WIDTH-1 downto 0);
+  SIGNAL reset_i : STD_LOGIC;
+  SIGNAL RESET_ii : STD_LOGIC;
 
--- State registers for one-hot state machine
-  signal idle_r : STD_LOGIC; 
-  signal single_cycle_frame_r : STD_LOGIC; 
-  signal sof_r : STD_LOGIC; 
-  signal data_cycle_r : STD_LOGIC; 
-  signal eof_r : STD_LOGIC; 
+  -- Internal Register Declarations
+  SIGNAL pdu_lfsr_r  : STD_LOGIC_VECTOR(15 downto 0); 
+  SIGNAL ifg_size_r  : UNSIGNED(7 downto 0); 
+  SIGNAL first_tx_dst_rdy_n : STD_LOGIC;
+  SIGNAL frame_size_r : UNSIGNED(3 downto 0); 
+  SIGNAL bytes_sent_r : UNSIGNED(3 downto 0); 
+  SIGNAL rem_r  : UNSIGNED(STRB_WIDTH-1 downto 0);
+  SIGNAL rem_r2 : UNSIGNED(STRB_WIDTH-1 downto 0);
+
+  -- State registers for one-hot state machine
+  SIGNAL idle_r : STD_LOGIC; 
+  SIGNAL single_cycle_frame_r : STD_LOGIC; 
+  SIGNAL sof_r : STD_LOGIC; 
+  SIGNAL data_cycle_r : STD_LOGIC; 
+  SIGNAL eof_r : STD_LOGIC; 
 
 BEGIN
   RESET_ii <= RESET;
@@ -139,7 +140,6 @@ BEGIN
         pdu_lfsr_r <= x"abcd";  -- random seed value
       ELSE 
         IF ( ((AXI4_S_IP_TREADY) AND (NOT idle_r)) = '1') THEN
-          --pdu_lfsr_r <= (NOT (pdu_lfsr_r(3) XOR pdu_lfsr_r(12) XOR pdu_lfsr_r(14) XOR pdu_lfsr_r(15)) & pdu_lfsr_r(14 downto 0));
           pdu_lfsr_r <= (NOT (pdu_lfsr_r(12) XOR pdu_lfsr_r(3) XOR pdu_lfsr_r(1) XOR pdu_lfsr_r(0)) & pdu_lfsr_r(15 downto 1));
         END IF;
       END IF;
@@ -148,11 +148,10 @@ BEGIN
   
   -- Connect TX_D to the pdu_lfsr_r register
   -- @todo: make parametrizable 
-  -- pdu_lfsr_r[16] ==> TDATA [ 64 * LANES ]
-  --  AXI4_S_OP_TDATA <= {AURORA_LANES*4{pdu_lfsr_r}};
   
   -- 1 lane:
   s_AXI4_S_OP_TDATA <= (pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r);
+  
   -- 4 lane:
   --s_AXI4_S_OP_TDATA <= (pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r) & 
   --                     (pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r) & 

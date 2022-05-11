@@ -11,12 +11,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1720000fs"></ZoomStartTime>
-      <ZoomEndTime time="15400001fs"></ZoomEndTime>
-      <Cursor1Time time="4000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="6880001fs"></ZoomEndTime>
+      <Cursor1Time time="747501fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="249"></NameColumnWidth>
+      <NameColumnWidth column_width="245"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="18" />
@@ -91,11 +91,13 @@
    <wvobject type="array" fp_name="/tb_gen_check/s_OK_VHDL">
       <obj_property name="ElementShortName">s_OK_VHDL[7:0]</obj_property>
       <obj_property name="ObjectShortName">s_OK_VHDL[7:0]</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_gen_check/s_OK_Veri">
       <obj_property name="ElementShortName">s_OK_Veri[7:0]</obj_property>
       <obj_property name="ObjectShortName">s_OK_Veri[7:0]</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
    </wvobject>
 </wave_config>

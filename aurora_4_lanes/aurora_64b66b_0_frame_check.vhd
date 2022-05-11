@@ -73,65 +73,65 @@ USE IEEE.STD_LOGIC_MISC.ALL;
 
 ENTITY aurora_64b66b_0_FRAME_CHECK IS
   GENERIC (
-    DATA_WIDTH      : integer := 4*64; --  64   DATA bus width
-    STRB_WIDTH      : integer := 4*8;  --  8   STROBE bus width
-    AURORA_LANES    : integer := 4;    --  1
-    LANE_DATA_WIDTH : integer := 4*64; --  AURORA_LANES * 64
-    REM_BUS         : integer := 5;    --  3
-    REM_BITS_MAX    : integer := 32    --  LANE_DATA_WIDTH/8
+    DATA_WIDTH      : INTEGER := 4*64; --  AURORA_LANES * 64
+    STRB_WIDTH      : INTEGER := 4*8;  --  AURORA_LANES * 8
+    AURORA_LANES    : INTEGER := 4;    --  number of lanes
+    LANE_DATA_WIDTH : INTEGER := 4*64; --  AURORA_LANES * 64
+    REM_BUS         : INTEGER := 5;    --  3 for 1 lane / 5 for 4 lanes
+    REM_BITS_MAX    : INTEGER := 4*8   --  LANE_DATA_WIDTH / 8
   );
   PORT ( 
     -- System Interface
-    USER_CLK       : in  STD_LOGIC;
-    RESET          : in  STD_LOGIC;
-    CHANNEL_UP     : in  STD_LOGIC;
-    DATA_ERR_COUNT : out STD_LOGIC_VECTOR(7 downto 0);
-    DATA_OK_COUNT  : out STD_LOGIC_VECTOR(7 downto 0);
+    USER_CLK       : IN  STD_LOGIC;
+    RESET          : IN  STD_LOGIC;
+    CHANNEL_UP     : IN  STD_LOGIC;
+    DATA_ERR_COUNT : OUT STD_LOGIC_VECTOR(7 downto 0);
+    DATA_OK_COUNT  : OUT STD_LOGIC_VECTOR(7 downto 0);
     -- User Interface
-    AXI4_S_IP_TX_TDATA  : in  STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
-    AXI4_S_IP_TX_TVALID : in  STD_LOGIC;
-    AXI4_S_IP_TX_TLAST  : in  STD_LOGIC;
-    AXI4_S_IP_TX_TKEEP  : in  STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
-    AXI4_S_IP_TX_TREADY : out STD_LOGIC
+    AXI4_S_IP_TX_TDATA  : IN  STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
+    AXI4_S_IP_TX_TVALID : IN  STD_LOGIC;
+    AXI4_S_IP_TX_TLAST  : IN  STD_LOGIC;
+    AXI4_S_IP_TX_TKEEP  : IN  STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
+    AXI4_S_IP_TX_TREADY : OUT STD_LOGIC
   );
 END aurora_64b66b_0_FRAME_CHECK;
 
 
 ARCHITECTURE bh OF aurora_64b66b_0_FRAME_CHECK IS
-  signal pdu_lfsr_r     : STD_LOGIC_VECTOR(15 downto 0);
-  signal pdu_cmp_data_r : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
-  signal RX_D_R         : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
-  signal KEEP_CMP       : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
-  signal pdu_data_valid_r : STD_LOGIC;
-  signal pdu_in_frame_r   : STD_LOGIC;
-  signal pdu_err_detected_c : STD_LOGIC_VECTOR(AURORA_LANES-1 downto 0);
-  signal pdu_cmp_data_r1    : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
-  signal data_err_c         : STD_LOGIC_VECTOR(AURORA_LANES-1 downto 0);
+  SIGNAL pdu_lfsr_r         : STD_LOGIC_VECTOR(15 downto 0);
+  SIGNAL pdu_cmp_data_r     : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
+  SIGNAL RX_D_R             : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
+  SIGNAL KEEP_CMP           : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
+  SIGNAL pdu_data_valid_r   : STD_LOGIC;
+  SIGNAL pdu_in_frame_r     : STD_LOGIC;
+  SIGNAL pdu_err_detected_c : STD_LOGIC_VECTOR(AURORA_LANES-1 downto 0);
+  SIGNAL pdu_cmp_data_r1    : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
+  SIGNAL data_err_c         : STD_LOGIC_VECTOR(AURORA_LANES-1 downto 0);
 
-  signal RX_D_R2            : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
-  signal RX_REM_R2          : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
-  signal RX_REM_R3          : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
-  signal RX_EOF_N_R2        : STD_LOGIC;
-  signal RX_SRC_RDY_N_R2    : STD_LOGIC;
+  SIGNAL RX_D_R2            : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
+  SIGNAL RX_REM_R2          : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
+  SIGNAL RX_REM_R3          : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
+  SIGNAL RX_EOF_N_R2        : STD_LOGIC;
+  SIGNAL RX_SRC_RDY_N_R2    : STD_LOGIC;
   
-  attribute shreg_extract : string;
-  attribute shreg_extract of RX_D_R2         : signal is "{no}";
-  attribute shreg_extract of RX_REM_R2       : signal is "{no}";
-  attribute shreg_extract of RX_REM_R3       : signal is "{no}";
-  attribute shreg_extract of RX_EOF_N_R2     : signal is "{no}";
-  attribute shreg_extract of RX_SRC_RDY_N_R2 : signal is "{no}";
+  ATTRIBUTE shreg_extract : STRING;
+  ATTRIBUTE shreg_extract OF RX_D_R2         : SIGNAL IS "NO";
+  ATTRIBUTE shreg_extract OF RX_REM_R2       : SIGNAL IS "NO";
+  ATTRIBUTE shreg_extract OF RX_REM_R3       : SIGNAL IS "NO";
+  ATTRIBUTE shreg_extract OF RX_EOF_N_R2     : SIGNAL IS "NO";
+  ATTRIBUTE shreg_extract OF RX_SRC_RDY_N_R2 : SIGNAL IS "NO";
  
-  signal pdu_in_frame_c    : STD_LOGIC;
-  signal pdu_lfsr_concat_w : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
-  signal pdu_data_valid_c  : STD_LOGIC;
+  SIGNAL pdu_in_frame_c    : STD_LOGIC;
+  SIGNAL pdu_lfsr_concat_w : STD_LOGIC_VECTOR(LANE_DATA_WIDTH-1 downto 0);
+  SIGNAL pdu_data_valid_c  : STD_LOGIC;
  
-  signal reset_i  : STD_LOGIC; 
-  signal RESET_ii : STD_LOGIC; 
+  SIGNAL reset_i  : STD_LOGIC; 
+  SIGNAL RESET_ii : STD_LOGIC; 
 
-  signal AXI4_S_IP_TX_TDATA_i : STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
-  signal AXI4_S_IP_TX_TKEEP_i : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
-  signal s_DATA_ERR_COUNT     : unsigned(7 downto 0);
-  signal s_DATA_OK_COUNT      : unsigned(7 downto 0);
+  SIGNAL AXI4_S_IP_TX_TDATA_i : STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
+  SIGNAL AXI4_S_IP_TX_TKEEP_i : STD_LOGIC_VECTOR(STRB_WIDTH-1 downto 0);
+  SIGNAL s_DATA_ERR_COUNT     : unsigned(7 downto 0);
+  SIGNAL s_DATA_OK_COUNT      : unsigned(7 downto 0);
   
 BEGIN
   AXI4_S_IP_TX_TDATA_i <= AXI4_S_IP_TX_TDATA;
@@ -155,17 +155,15 @@ BEGIN
   END PROCESS;
   
   -- @todo: make this paremetrizable
-  -- pdu_lfsr_r[16] ==> concat_w [ 64 * LANES ]
-  --  pdu_lfsr_concat_w <= {AURORA_LANES*4{pdu_lfsr_r}};
 
   -- 1 lane:
   -- pdu_lfsr_concat_w <= (pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r);
+  
   -- 4 lane:
   pdu_lfsr_concat_w <= (pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r) & 
                        (pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r) & 
                        (pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r) & 
                        (pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r & pdu_lfsr_r);
-
 
   p_axi_in: PROCESS(USER_CLK)
   BEGIN 
@@ -201,8 +199,9 @@ BEGIN
     END IF;
   END PROCESS;
 
-  -- size of KEEP_CMP  ( 63 downto 0 )
+  -- KEEP_CMP  ( 63 downto 0 )
   -- RX_REM_R2 (  1 downto 0 )
+
   -- 1 lane
   -- KEEP_CMP(63 downto 56) <= (others => RX_REM_R2( 0) );
   -- KEEP_CMP(55 downto 48) <= (others => RX_REM_R2( 1) );
@@ -248,6 +247,7 @@ BEGIN
   KEEP_CMP( 23 downto  16) <= (others => RX_REM_R2(29) );
   KEEP_CMP( 15 downto   8) <= (others => RX_REM_R2(30) );
   KEEP_CMP(  7 downto   0) <= (others => RX_REM_R2(31) );
+
 -- Register and decode the RX_D_R2 data with RX_REM_R2 bus
   p_rxd: PROCESS(USER_CLK)
   BEGIN 
@@ -283,7 +283,7 @@ BEGIN
       IF (reset_i = '1') THEN
         pdu_data_valid_r <= '0';
       ELSE
-        pdu_data_valid_r <= (pdu_data_valid_c) AND (NOT and_reduce(pdu_err_detected_c));
+        pdu_data_valid_r <= (pdu_data_valid_c) AND (NOT or_reduce(pdu_err_detected_c));
       END IF;
     END IF;
   END PROCESS;
@@ -294,7 +294,10 @@ BEGIN
   data_err_c(1) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(127 downto  64)) /= unsigned(pdu_cmp_data_r1(127 downto  64))) ) ELSE '0';
   data_err_c(2) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(191 downto 128)) /= unsigned(pdu_cmp_data_r1(191 downto 128))) ) ELSE '0';
   data_err_c(3) <= '1' WHEN ( (pdu_data_valid_r = '1') AND ( unsigned(RX_D_R(255 downto 192)) /= unsigned(pdu_cmp_data_r1(255 downto 192))) ) ELSE '0';
-
+  
+  -- Alternatively:
+  --data_err_c(0) <=  pdu_data_valid_r AND or_reduce(RX_D_R(63 downto 0) XOR pdu_cmp_data_r1(63 downto 0)) ;
+  
   -- An error is detected when LFSR generated PDU data from the pdu_cmp_data_r register, 
   -- does not match valid data from the RX_D port
   p_err_detect_reg: PROCESS(USER_CLK)
@@ -329,4 +332,3 @@ BEGIN
   DATA_OK_COUNT  <= std_logic_vector(s_DATA_OK_COUNT);
 
 END bh;
-

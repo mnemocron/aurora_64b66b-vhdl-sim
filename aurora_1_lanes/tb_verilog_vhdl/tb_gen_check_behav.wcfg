@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2393000fs"></ZoomStartTime>
-      <ZoomEndTime time="2683001fs"></ZoomEndTime>
-      <Cursor1Time time="2508500fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="6540001fs"></ZoomEndTime>
+      <Cursor1Time time="2712500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="235"></NameColumnWidth>
-      <ValueColumnWidth column_width="114"></ValueColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="34" />
+   <WVObjectSize size="10" />
    <wvobject type="logic" fp_name="/tb_gen_check/user_clk">
       <obj_property name="ElementShortName">user_clk</obj_property>
       <obj_property name="ObjectShortName">user_clk</obj_property>
@@ -48,6 +48,18 @@
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
    </wvobject>
+   <wvobject type="array" fp_name="/tb_gen_check/s_OK_VHDL">
+      <obj_property name="ElementShortName">s_OK_VHDL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_OK_VHDL[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_gen_check/s_OK_Veri">
+      <obj_property name="ElementShortName">s_OK_Veri[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_OK_Veri[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
    <wvobject type="array" fp_name="/tb_gen_check/s_axi_data_VHDL">
       <obj_property name="ElementShortName">s_axi_data_VHDL[63:0]</obj_property>
       <obj_property name="ObjectShortName">s_axi_data_VHDL[63:0]</obj_property>
@@ -55,109 +67,5 @@
    <wvobject type="array" fp_name="/tb_gen_check/s_axi_data_Veri">
       <obj_property name="ElementShortName">s_axi_data_Veri[63:0]</obj_property>
       <obj_property name="ObjectShortName">s_axi_data_Veri[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/s_axi_keep_VHDL">
-      <obj_property name="ElementShortName">s_axi_keep_VHDL[7:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axi_keep_VHDL[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/s_axi_keep_Veri">
-      <obj_property name="ElementShortName">s_axi_keep_Veri[7:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axi_keep_Veri[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/s_axi_last_VHDL">
-      <obj_property name="ElementShortName">s_axi_last_VHDL</obj_property>
-      <obj_property name="ObjectShortName">s_axi_last_VHDL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/s_axi_last_Veri">
-      <obj_property name="ElementShortName">s_axi_last_Veri</obj_property>
-      <obj_property name="ObjectShortName">s_axi_last_Veri</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/s_axi_valid_VHDL">
-      <obj_property name="ElementShortName">s_axi_valid_VHDL</obj_property>
-      <obj_property name="ObjectShortName">s_axi_valid_VHDL</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/s_axi_valid_Veri">
-      <obj_property name="ElementShortName">s_axi_valid_Veri</obj_property>
-      <obj_property name="ObjectShortName">s_axi_valid_Veri</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/vhdl_check/RX_D_R">
-      <obj_property name="ElementShortName">RX_D_R[63:0]</obj_property>
-      <obj_property name="ObjectShortName">RX_D_R[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/verilog_check/RX_D_R">
-      <obj_property name="ElementShortName">RX_D_R[0:63]</obj_property>
-      <obj_property name="ObjectShortName">RX_D_R[0:63]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/vhdl_check/KEEP_CMP">
-      <obj_property name="ElementShortName">KEEP_CMP[63:0]</obj_property>
-      <obj_property name="ObjectShortName">KEEP_CMP[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/verilog_check/KEEP_CMP">
-      <obj_property name="ElementShortName">KEEP_CMP[0:63]</obj_property>
-      <obj_property name="ObjectShortName">KEEP_CMP[0:63]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/vhdl_check/pdu_cmp_data_r">
-      <obj_property name="ElementShortName">pdu_cmp_data_r[63:0]</obj_property>
-      <obj_property name="ObjectShortName">pdu_cmp_data_r[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/verilog_check/pdu_cmp_data_r">
-      <obj_property name="ElementShortName">pdu_cmp_data_r[63:0]</obj_property>
-      <obj_property name="ObjectShortName">pdu_cmp_data_r[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/vhdl_check/pdu_cmp_data_r1">
-      <obj_property name="ElementShortName">pdu_cmp_data_r1[63:0]</obj_property>
-      <obj_property name="ObjectShortName">pdu_cmp_data_r1[63:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/verilog_check/pdu_cmp_data_r1">
-      <obj_property name="ElementShortName">pdu_cmp_data_r1[0:63]</obj_property>
-      <obj_property name="ObjectShortName">pdu_cmp_data_r1[0:63]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/verilog_check/pdu_data_valid_c">
-      <obj_property name="ElementShortName">pdu_data_valid_c</obj_property>
-      <obj_property name="ObjectShortName">pdu_data_valid_c</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/vhdl_check/pdu_data_valid_c">
-      <obj_property name="ElementShortName">pdu_data_valid_c</obj_property>
-      <obj_property name="ObjectShortName">pdu_data_valid_c</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/vhdl_check/pdu_data_valid_r">
-      <obj_property name="ElementShortName">pdu_data_valid_r</obj_property>
-      <obj_property name="ObjectShortName">pdu_data_valid_r</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/verilog_check/pdu_data_valid_r">
-      <obj_property name="ElementShortName">pdu_data_valid_r</obj_property>
-      <obj_property name="ObjectShortName">pdu_data_valid_r</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/vhdl_check/data_err_c">
-      <obj_property name="ElementShortName">data_err_c[0:0]</obj_property>
-      <obj_property name="ObjectShortName">data_err_c[0:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/verilog_check/data_err_c">
-      <obj_property name="ElementShortName">data_err_c[0:0]</obj_property>
-      <obj_property name="ObjectShortName">data_err_c[0:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/vhdl_check/RX_REM_R2">
-      <obj_property name="ElementShortName">RX_REM_R2[7:0]</obj_property>
-      <obj_property name="ObjectShortName">RX_REM_R2[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_gen_check/verilog_check/RX_REM_R2">
-      <obj_property name="ElementShortName">RX_REM_R2[0:7]</obj_property>
-      <obj_property name="ObjectShortName">RX_REM_R2[0:7]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/vhdl_check/pdu_in_frame_c">
-      <obj_property name="ElementShortName">pdu_in_frame_c</obj_property>
-      <obj_property name="ObjectShortName">pdu_in_frame_c</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/verilog_check/pdu_in_frame_c">
-      <obj_property name="ElementShortName">pdu_in_frame_c</obj_property>
-      <obj_property name="ObjectShortName">pdu_in_frame_c</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/vhdl_check/pdu_in_frame_r">
-      <obj_property name="ElementShortName">pdu_in_frame_r</obj_property>
-      <obj_property name="ObjectShortName">pdu_in_frame_r</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_gen_check/verilog_check/pdu_in_frame_r">
-      <obj_property name="ElementShortName">pdu_in_frame_r</obj_property>
-      <obj_property name="ObjectShortName">pdu_in_frame_r</obj_property>
    </wvobject>
 </wave_config>
